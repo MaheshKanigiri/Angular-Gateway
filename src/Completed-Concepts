@@ -1,0 +1,12 @@
+1.Implemented CRUD Using MongoDB:
+[Done,CRUD-Backend,Microservices with API-Gateway,Angular CRUD]
+2.Implemented CRUD Using SQLServer:
+[Done,CRUD-Backend,Microservices with API-Gateway,Angular CRUD]
+3.Microservices:Implemented with both SQLServer,MongoDB and API-Gateway(Ocelot)
+4.Security:
+Implemented security using JWT Backend
+Implemented Frontend for security By Interceptors,Guard,Services.
+Implemented Logina and Registering Functionalities successfuly.
+5.CQRS : Implemented in Backend and used in Angular.
+6.Angular:Applied CRUD From Backend API's from MongoDB/SQLServer.
+7.MOQ Framework:Pending
