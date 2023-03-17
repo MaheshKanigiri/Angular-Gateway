@@ -1,0 +1,34 @@
+<div class="col-md-6  offset-md-4 ">
+
+    <div class="col-7 offset-md-2">
+      <div class="card">
+        <div class="card-body">
+
+          <form>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <label class="form-label">User Name</label>
+              <input type="userName" id="form1Example1" class="form-control"  [(ngModel)]="user.userName" name="userName"/>
+            </div>
+            <div class="form-outline mb-4">
+              <label class="form-label" >Email</label>
+              <input type="email" [(ngModel)]="user.email" name="email" id="form2Example2" class="form-control" />
+            </div>
+            <div class="form-outline mb-4">
+              <label class="form-label" >City</label>
+              <input type="city" id="form3Example3" [(ngModel)]="user.city" name="city" class="form-control" />
+            </div>
+            <div class="form-outline mb-4">
+              <label class="form-label" >Password</label>
+              <input type="password" id="form4Example4" [(ngModel)]="user.password" name="password" class="form-control" />
+            </div>
+
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block" (click)="submitForm()" *ngIf="!isNew">Update</button>
+            <button type="submit" class="btn btn-primary btn-block" (click)="submitForm()" *ngIf="isNew">Add</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

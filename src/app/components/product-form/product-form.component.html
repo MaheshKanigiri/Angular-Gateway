@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-4">
+
+      <div class="col-7 offset-md-2">
+        <div class="card">
+          <div class="card-body">
+
+            <form >
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <label class="form-label">Product Name</label>
+                <input type="productName" id="form1Example1" class="form-control"  [(ngModel)]="product.productName" name="productName"/>
+              </div>
+              <div class="form-outline mb-4">
+                <label class="form-label" >Product Description</label>
+                <input type="productDescription" [(ngModel)]="product.productDescription" name="productDescription" id="form2Example2" class="form-control" />
+              </div>
+              <div class="form-outline mb-4">
+                <label class="form-label" >Product Quantity</label>
+                <input type="productQuantity" id="form3Example3" [(ngModel)]="product.productQuantity" name="productQuantity" class="form-control" />
+              </div>
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block" (click)="submitForm()" *ngIf="!isNew">Update</button>
+              <button type="submit" class="btn btn-primary btn-block" (click)="submitForm()" *ngIf="isNew">Add</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
